@@ -21,7 +21,7 @@ body {
   justify-content: center;
   position: relative;
   border-radius: 50%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .menu.active {
@@ -87,4 +87,21 @@ li svg {
 
 li:hover svg {
   color: var(--color);
+}
+
+@media only screen and (max-width: 550px) {
+  .menu {
+    height: 300px;
+    width: 300px;
+  }
+
+  .menu li {
+    transform-origin: 175px;
+  }
+
+  li svg {
+    height: 30px;
+    width: 30px;
+  }
+
 }
